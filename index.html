@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="shortcut icon" href="assets/img/cat.ico" type="image/x-icon" />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container d-flex">
+        <!-- Brand -->
+        <a href="#" class="navbar-brand me-lg-3"
+          ><img src="assets/img/cat.png" alt="brand"
+        /></a>
+        <!-- Search -->
+        <form class="d-flex p-2 flex-fill" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search" />
+        </form>
+        <!-- Search End -->
+        <!-- Navigation -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex justify-content-end me-5 ms-lg-5">
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><img src="assets/img/cart.png" alt="cart"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link ms-3"
+                  ><img src="assets/img/live.png" alt="live sale"
+                /></a>
+              </li>
+              <li class="nav-item ms-5 me-2 mt-2">
+                <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
+                  >Register</a
+                >
+              </li>
+              <div
+                class="vr rounded-5"
+                style="height: 36px; margin-top: 20px; color: black"></div>
+              <li class="nav-item ms-2 mt-2">
+                <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navigation End -->
+      </div>
+    </nav>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-8 mt-4">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/img/banner1.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="promo for you" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner2.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="pet service is too cheap" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner3.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="nothing happen" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner4.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="puppies!!!" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 mt-4">
+          <div class="row">
+            <div class="col mb-2">
+              <img
+                src="assets/img/banner4.jpg"
+                class="d-block w-100"
+                style="height: 180px"
+                alt="puppies!!!" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                src="assets/img/banner2.jpg"
+                class="d-block w-100"
+                style="height: 180px"
+                alt="puppies!!!" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Categories -->
+      <h5 class="fw-semibold mt-3">CATEGORIES</h5>
+      <div class="d-flex flex-row mt-3 text-center">
+        <div class="p-2">
+          <img
+            src="assets/img/category/bird.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg1" />
+          <label for="ctg1" class="fw-semibold">Bird</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/cat.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg2" />
+          <label for="ctg2" class="fw-semibold">Cat</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/dog.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg3" />
+          <label for="ctg3" class="fw-semibold">Dog</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/fish.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg4" />
+          <label for="ctg4" class="fw-semibold">Fish</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/hamster.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg5" />
+          <label for="ctg5" class="fw-semibold">Hamster & Marmut</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/hedgehog.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg6" />
+          <label for="ctg6" class="fw-semibold">Hedgehog</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/rabbit.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg7" />
+          <label for="ctg7" class="fw-semibold">Rabbit</label>
+        </div>
+        <div class="p-2 ms-3">
+          <img
+            src="assets/img/category/turtle.png"
+            alt=""
+            class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
+            id="ctg8" />
+          <label for="ctg8" class="fw-semibold">Turtle</label>
+        </div>
+      </div>
+      <!-- FLASH SALE -->
+      <h5 class="fw-semibold mt-2">
+        FLASH SALE <span class="badge text-bg-warning" id="cntdown"></span>
+      </h5>
+      <h6 class="fw-semibold">for Pet Care</h6>
+      <div class="d-flex flex-row text-center">
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Service 1</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Service 2</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Care 1</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Service 4</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Care 2</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <h5 class="fw-semibold mt-2">RECOMMENDATIONS</h5>
+      <div class="d-flex flex-row text-center">
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 1</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 2</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 3</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 4</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 5</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row text-center">
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 1</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 2</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 3</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 4</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 5</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row text-center">
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 1</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 2</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 3</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 4</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <img
+              src="assets/img/recommendation/oyen.jpg"
+              alt=""
+              class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Pet Name 5</h5>
+              <p class="card-text">
+                <small class="fw-semibold">Rp 30.000</small>
+              </p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="row text-center mt-3"
+      style="background-color: rgb(243, 243, 243)">
+      <h3 class="fw-bold mt-5">
+        PET SHOP
+        <h6>by Kyriverse Group</h6>
+      </h3>
+      <p class="mt-4">© 2023 Kyriten</p>
+    </footer>
+
+    <!-- Script Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("October 5, 2023 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="cntdown"
+        document.getElementById("cntdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("cntdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
