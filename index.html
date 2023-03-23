@@ -12,12 +12,14 @@
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous" />
+
+    <script src="assets/js/countdown.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container d-flex">
         <!-- Brand -->
-        <a href="#" class="navbar-brand me-lg-3"
+        <a href="index.html" class="navbar-brand me-lg-3"
           ><img src="assets/img/cat.png" alt="brand"
         /></a>
         <!-- Search -->
@@ -30,44 +32,32 @@
         </form>
         <!-- Search End -->
         <!-- Navigation -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navigation"
-          aria-controls="navigation"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="d-flex justify-content-end me-5 ms-lg-5">
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link"
-                  ><img src="assets/img/cart.png" alt="cart"
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link ms-3"
-                  ><img src="assets/img/live.png" alt="live sale"
-                /></a>
-              </li>
-              <li class="nav-item ms-5 me-2 mt-2">
-                <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
-                  >Register</a
-                >
-              </li>
-              <div
-                class="vr rounded-5"
-                style="height: 36px; margin-top: 20px; color: black"></div>
-              <li class="nav-item ms-2 mt-2">
-                <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
-                  >Log In</a
-                >
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link"
+                ><img src="assets/img/cart.png" alt="cart"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-3"
+                ><img src="assets/img/live.png" alt="live sale"
+              /></a>
+            </li>
+            <li class="nav-item ms-5 me-2 mt-2">
+              <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
+                >Register</a
+              >
+            </li>
+            <div
+              class="vr rounded-5"
+              style="height: 36px; margin-top: 20px; color: black"></div>
+            <li class="nav-item ms-2 mt-2">
+              <a href="#" class="nav-link fw-semibold" style="font-size: 24px"
+                >Log In</a
+              >
+            </li>
+          </ul>
         </div>
         <!-- Navigation End -->
       </div>
@@ -530,36 +520,5 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("October 5, 2023 15:37:25").getTime();
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="cntdown"
-        document.getElementById("cntdown").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("cntdown").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-    </script>
   </body>
 </html>
