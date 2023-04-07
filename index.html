@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Shop</title>
-    <link rel="shortcut icon" href="assets/img/cat.ico" type="image/x-icon" />
+    <title>KyREAD</title>
+    <link rel="shortcut icon" href="assets/img/books-icon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.css">
     <!-- CSS Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -13,14 +18,31 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous" />
 
-    <script src="assets/js/countdown.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      a:link{
+        text-decoration: none;
+      }
+      a:visited{
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      a:active{
+        text-decoration: none;
+      }
+      .card-footer{
+        border-top: none;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container d-flex">
         <!-- Brand -->
         <a href="index.html" class="navbar-brand me-lg-3"
-          ><img src="assets/img/cat.png" alt="brand"
+          ><img src="assets/img/brand-no tagline.png" alt="brand"
         /></a>
         <!-- Search -->
         <form class="d-flex p-2 flex-fill" role="search">
@@ -75,28 +97,56 @@
                   src="assets/img/banner1.jpg"
                   class="d-block w-100"
                   style="height: 370px"
-                  alt="promo for you" />
+                  alt="" />
               </div>
               <div class="carousel-item">
                 <img
                   src="assets/img/banner2.jpg"
                   class="d-block w-100"
                   style="height: 370px"
-                  alt="pet service is too cheap" />
+                  alt="" />
               </div>
               <div class="carousel-item">
                 <img
                   src="assets/img/banner3.jpg"
                   class="d-block w-100"
                   style="height: 370px"
-                  alt="nothing happen" />
+                  alt="" />
               </div>
               <div class="carousel-item">
                 <img
                   src="assets/img/banner4.jpg"
                   class="d-block w-100"
                   style="height: 370px"
-                  alt="puppies!!!" />
+                  alt="" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner5.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner6.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner7.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/banner8.jpg"
+                  class="d-block w-100"
+                  style="height: 370px"
+                  alt="" />
               </div>
             </div>
           </div>
@@ -114,7 +164,7 @@
           <div class="row">
             <div class="col">
               <img
-                src="assets/img/banner2.jpg"
+                src="assets/img/banner1.jpg"
                 class="d-block w-100"
                 style="height: 180px"
                 alt="puppies!!!" />
@@ -127,301 +177,499 @@
       <div class="d-flex flex-row mt-3 text-center">
         <div class="p-2">
           <img
-            src="assets/img/category/bird.png"
+            src="assets/img/category/novel.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg1" />
-          <label for="ctg1" class="fw-semibold">Bird</label>
+          <label for="ctg1" class="fw-semibold">Novel</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/cat.png"
+            src="assets/img/category/biography.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg2" />
-          <label for="ctg2" class="fw-semibold">Cat</label>
+          <label for="ctg2" class="fw-semibold">Biography</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/dog.png"
+            src="assets/img/category/comics.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg3" />
-          <label for="ctg3" class="fw-semibold">Dog</label>
+          <label for="ctg3" class="fw-semibold">Comics</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/fish.png"
+            src="assets/img/category/magazine.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg4" />
-          <label for="ctg4" class="fw-semibold">Fish</label>
+          <label for="ctg4" class="fw-semibold">Magazine</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/hamster.png"
+            src="assets/img/category/dictionary.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg5" />
-          <label for="ctg5" class="fw-semibold">Hamster & Marmut</label>
+          <label for="ctg5" class="fw-semibold">Dictionary</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/hedgehog.png"
+            src="assets/img/category/script.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg6" />
-          <label for="ctg6" class="fw-semibold">Hedgehog</label>
+          <label for="ctg6" class="fw-semibold">Script</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/rabbit.png"
+            src="assets/img/category/manga.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg7" />
-          <label for="ctg7" class="fw-semibold">Rabbit</label>
+          <label for="ctg7" class="fw-semibold">Manga</label>
         </div>
         <div class="p-2 ms-3">
           <img
-            src="assets/img/category/turtle.png"
+            src="assets/img/category/encyclopedia.png"
             alt=""
             class="rounded-circle border border-2 border-dark p-2 border-opacity-25"
             id="ctg8" />
-          <label for="ctg8" class="fw-semibold">Turtle</label>
+          <label for="ctg8" class="fw-semibold">Encyclopedia</label>
         </div>
       </div>
       <!-- FLASH SALE -->
       <h5 class="fw-semibold mt-2">
         FLASH SALE <span class="badge text-bg-warning" id="cntdown"></span>
       </h5>
-      <h6 class="fw-semibold">for Pet Care</h6>
       <div class="d-flex flex-row text-center">
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Service 1</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+        <div class="flex-fill">
+          <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Dikta & Hukum
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>3,8RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Layangan Putus.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Layangan Putus
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">45.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>5RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Bumi Karya Tere Liye.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Bumi
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">63.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>6RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Hujan Karya Tere Liye.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Hujan
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">68.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>7,1RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Majnun.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Majnun
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">53.800</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>5,12RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Funiculi Funicula.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Funiculi Funicula
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">130.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>2,15RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Melangkah.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Melangkah
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">53.200</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>1,78RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Oh My Savior.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Oh My Savior
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">78.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>2,91RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Laut Bercerita.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Laut Bercerita
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">30.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>2,12RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/172 Days.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">172 Days
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">103.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>1,25RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Gadis Minimarket.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Gadis Minimarket
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>7RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Little Men - Anak-Anak Plumfield.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Little Men: Anak-Anak Plumfield
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">49.600</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>2,63RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Merahnya Merah.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                        <h5 class="card-title mt-2">Merahnya Merah
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">52.700</big>
+                          </div>
+                          <div class="col-md-auto me-4">
+                            <small>4,11RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Negeri 5 Menara.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                      <div class="row">
+                        <div class="col-3 mx-auto">
+                        </div>
+                      </div>
+                        <h5 class="card-title mt-2">Negeri 5 Menara
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-4" style="color:orangered">99.980</big>
+                          </div>
+                          <div class="col-md-auto me-3">
+                            <small>10,7RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                  <div class="card" style="width: 240px; height: 360px">
+                    <div class="image-wrapper">
+                      <img
+                        src="assets/img/flashsale/Pintu Harmonika.jpg"
+                        alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+                    </div>
+                      <div class="row">
+                        <div class="col-3 mx-auto">
+                        </div>
+                      </div>
+                        <h5 class="card-title mt-2">Pintu Harmonika
+                          <span class="badge bg-warning text-dark">Novel</span>
+                        </h5>
+                        <div class="row mt-auto mb-3">
+                          <div class="col">
+                            <small style="color:orangered">Rp</small><big class="me-4" style="color:orangered">63.000</big>
+                          </div>
+                          <div class="col-md-auto me-3">
+                            <small>2,18RB Terjual</small>
+                          </div>
+                        </div>
+                    <a href="#" class="stretched-link"></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Service 2</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Care 1</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Service 4</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Care 2</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- RECOMMENDATIONS -->
       <h5 class="fw-semibold mt-2">RECOMMENDATIONS</h5>
       <div class="d-flex flex-row text-center">
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 1</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>      
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 2</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 3</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 4</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
             </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 5</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-      </div>
-      <div class="d-flex flex-row text-center">
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 1</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 2</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 3</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 4</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
-            </div>
-            <a href="#" class="stretched-link"></a>
-          </div>
-        </div>
-        <div class="p-2 flex-fill">
-          <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 5</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
@@ -430,95 +678,351 @@
       <div class="d-flex flex-row text-center">
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 1</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 2</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 3</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 4</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
         <div class="p-2 flex-fill">
           <div class="card" style="width: 240px; height: 360px">
-            <img
-              src="assets/img/recommendation/oyen.jpg"
-              alt=""
-              class="card-img-top" />
-            <div class="card-body">
-              <h5 class="card-title">Pet Name 5</h5>
-              <p class="card-text">
-                <small class="fw-semibold">Rp 30.000</small>
-              </p>
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row text-center">
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
+            </div>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="p-2 flex-fill">
+          <div class="card" style="width: 240px; height: 360px">
+            <div class="image-wrapper">
+              <img
+                src="assets/img/flashsale/Dikta dan Hukum.jpg"
+                alt="" style="height: 90%; width: 70%;" class="card-img-top img-thumbnail mx-auto d-block mt-2" />
+            </div>
+            <h5 class="card-title mt-2">Dikta & Hukum
+              <span class="badge bg-warning text-dark">Novel</span>
+            </h5>
+            <div class="row mt-auto mb-3">
+              <div class="col">
+                <small style="color:orangered">Rp</small><big class="me-1" style="color:orangered">73.000</big>
+              </div>
+              <div class="col-md-auto me-4">
+                <small>3,8RB Terjual</small>
+              </div>                        
             </div>
             <a href="#" class="stretched-link"></a>
           </div>
         </div>
       </div>
     </section>
-    <footer
-      class="row text-center mt-3"
-      style="background-color: rgb(243, 243, 243)">
-      <h3 class="fw-bold mt-5">
-        PET SHOP
-        <h6>by Kyriverse Group</h6>
-      </h3>
-      <p class="mt-4">© 2023 Kyriten</p>
-    </footer>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted mt-5">
+      <!-- Section: Links  -->
+      <section class="bg-body-secondary p-4" >
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <img src="assets/img/brand-no tagline.png" alt="brand" >
+              <p>
+                Here you can find any books that like novel, comic, science, economic, etc. You can buy any books only on your phone. Just clicks and you will get your book.
+              </p>
+            </div>
+            <!-- Grid column -->
 
-    <!-- Script Bootstrap-->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                CUSTOMER SERVICES
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Payment Method</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Return and Refund</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">KyREAD Guarantee</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contact Us</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-2">
+                PAYMENT
+              </h6>
+              <div class="row">
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/bni-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/bri-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/mandiri-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/bca-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/mastercard-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/payment/paypal-icon.png" alt="" style="width: 100%;"></a>
+                </div>
+              </div>
+              <h6 class="text-uppercase fw-bold mb-2 mt-4">
+                LOGISTICS
+              </h6>
+              <div class="row">
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/gosend-logo.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/jne-logo.png" alt="" style="width: 100%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/jnt-logo.png" alt="" style="width: 100%;"></a>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col text-center">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/grabexpress-logo.png" alt="" style="width: 80%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/sicepat-logo.png" alt="" style="width: 140%;"></a>
+                </div>
+                <div class="col">
+                  <a href="#!" class="text-reset"><img src="assets/img/delivery/tiki-logo.png" alt="" style="width: 130%;"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> Kota Depok, Jawa Barat, Indonesia</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@kyreadstore.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> + 62 812 788 07</p>
+              <p><i class="fas fa-print me-3 text-secondary"></i> + 62 812 789 17</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center bg-opacity-25 bg-dark p-3 text-dark" >
+        <h3 class="fw-bold mt-4">
+            KyREAD
+            <h6>by Kyriverse Group</h6>
+          </h3>
+          <p class="mt-4"></p>
+        <a class="text-reset fw-bold" href="#">© 2023 Kyriten Dev</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+  <!-- Script Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
-  </body>
+        <script src="assets/js/countdown.js"></script>
 </html>
